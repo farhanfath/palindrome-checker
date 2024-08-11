@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">KM Test</string>
+    <string name="palindromeText">Palindrome</string>
+    <string name="checkText">CHECK</string>
+    <string name="nextText">NEXT</string>
+    <string name="nameText">Name</string>
+    <string name="exampleName">Jhon Doe</string>
+    <string name="welcomeText">Welcome</string>
+    <string name="chooseText">Choose A User</string>
+    <string name="textSelected">Selected User Name</string>
 </resources>
