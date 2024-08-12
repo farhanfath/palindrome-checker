@@ -56,13 +56,14 @@ The application uses the [ReqRes API](https://reqres.in/) to fetch user data. Th
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    https://github.com/farhanfath/palindrome-checker.git
 
-2. Open the project in Android Studio.
+2. **Open the project in Android Studio.**
+
    Build and run the application on your emulator or device.
 
-3. Contributing
-
+3. **Contributing**
+   
    Contributions are welcome! Please submit issues and pull requests on the GitHub repository.
