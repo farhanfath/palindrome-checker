@@ -7,5 +7,9 @@
     <string name="exampleName">Jhon Doe</string>
     <string name="welcomeText">Welcome</string>
     <string name="chooseText">Choose A User</string>
-    <string name="textSelected">Selected User Name</string>
+    <string name="textSelected">Selected User Name :</string>
+    <string name="unknown">Unknown</string>
+    <string name="userFullName">%1$s %2$s</string>
+    <string name="emptyStateText">There Is Nothing Here</string>
+    <string name="networkErrorMessage">No Internet Connection</string>
 </resources>

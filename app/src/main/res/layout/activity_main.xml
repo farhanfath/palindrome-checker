@@ -14,7 +14,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
         android:layout_gravity="center"
-        tools:srcCompat="@drawable/ic_launcher_background" />
+        android:src="@drawable/suitmedialogo"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/nameEtLayout"

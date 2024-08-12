@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
 
     <TextView
-        android:id="@+id/selectedUserText"
+        android:id="@+id/selectedText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textSelected"
@@ -40,8 +40,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/selectedUserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/unknown"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/selectedText"
+        app:layout_constraintStart_toStartOf="@+id/selectedText"
+        app:layout_constraintTop_toBottomOf="@+id/selectedText" />
+
     <Button
-        android:id="@+id/nextBtn"
+        android:id="@+id/chooseUserBtn"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
