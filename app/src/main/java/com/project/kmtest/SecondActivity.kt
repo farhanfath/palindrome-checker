@@ -2,6 +2,7 @@ package com.project.kmtest
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -27,9 +28,9 @@ class SecondActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.title = "Second Screen"
 
         val userName = intent.getStringExtra("username")
         binding.userNameText.text = userName
@@ -37,6 +38,10 @@ class SecondActivity : AppCompatActivity() {
         binding.chooseUserBtn.setOnClickListener {
             val intent = Intent(this, ThirdActivity::class.java)
             startForResult.launch(intent)
+        }
+
+        binding.backBtn.setOnClickListener {
+            finish()
         }
     }
 }

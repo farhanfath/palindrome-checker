@@ -3,7 +3,11 @@ package com.project.kmtest
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
 import com.project.kmtest.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.hide()
@@ -25,10 +30,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openSecondScreenHandler() {
-        val intent = Intent(this, SecondActivity::class.java)
-        intent.putExtra("username", binding.nameEt.text.toString())
-
-        startActivity(intent)
+        val username = binding.nameEt.text.toString()
+        if (username.isEmpty()) {
+            binding.nameEtLayout.error = "Name cannot be empty"
+        } else {
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("username", username)
+            startActivity(intent)
+        }
     }
 
     private fun palindromeHandler() {
@@ -51,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         val message = if (isPalindrome) "Is Palindrome" else "Not Palindrome"
 
         AlertDialog.Builder(this)
-            .setTitle("Result")
+            .setTitle("Palindrome Status :")
             .setMessage(message)
             .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
             .show()

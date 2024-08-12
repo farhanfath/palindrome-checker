@@ -24,8 +24,7 @@ class UserAdapter(
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         val user = users[position]
         with(holder.binding) {
-            userFirstName.text = user.firstName
-            userLastName.text = user.lastName
+            userName.text = "${user.firstName} ${user.lastName}"
             userEmail.text = user.email
             Glide.with(holder.itemView.context)
                 .load(user.avatar)

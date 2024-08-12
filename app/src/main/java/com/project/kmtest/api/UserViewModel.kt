@@ -49,8 +49,7 @@ class UserViewModel : ViewModel() {
                             isLastPage = true
                             _emptyState.value = currentPage == 1
                         } else {
-                            val currentUsers = _users.value ?: emptyList()
-                            _users.value = if (isRefreshing) it.data else currentUsers + it.data
+                            _users.value = it.data
                             currentPage++
                         }
                     }
