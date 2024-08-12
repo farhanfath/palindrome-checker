@@ -15,7 +15,7 @@
 
 The application uses the [ReqRes API](https://reqres.in/) to fetch user data. The API provides endpoints for retrieving a list of users which is displayed in the app.
 
-## UI Design
+## Development Environment
 
 - **Language**: Kotlin
 - **UI**: XML
@@ -43,12 +43,12 @@ The application uses the [ReqRes API](https://reqres.in/) to fetch user data. Th
 
 ### Screenshots
 
-| Screen        | Description                               | Demo Photo                                      |
-|---------------|-------------------------------------------|-------------------------------------------------|
-| Home Screen    | Input field for palindrome check and user name | ![Home Screen](demo/home.jpg)                   |
-| Palindrome Result | Shows the result of palindrome check      | ![Palindrome Result](demo/palindrome_check.jpg) |
-| Third Screen      | Displays list of users from ReqRes API     | ![User List](demo/list_demo.jpg)                |
-| Second Screen  | Shows details of selected user             | ![Selected User](demo/selected_demo.jpg)        |
+| Screen        | Description                               | Demo Photo                                                                 |
+|---------------|-------------------------------------------|----------------------------------------------------------------------------|
+| Home Screen   | Input field for palindrome check and user name | <img src="demo/home.jpg" alt="Home Screen" width="300"/>                   |
+| Palindrome Result | Shows the result of palindrome check      | <img src="demo/palindrome_check.jpg" alt="Palindrome Result" width="300"/> |
+| User List     | Displays list of users from ReqRes API     | <img src="demo/list_demo.jpg" alt="User List" width="300"/>                |
+| Selected User | Shows details of selected user             | <img src="demo/selected_demo.jpg" alt="Selected User" width="300"/>        |
 
 ### Video Demo
 
