@@ -3,11 +3,8 @@ package com.project.kmtest
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
 import com.project.kmtest.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
